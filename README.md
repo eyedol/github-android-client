@@ -64,3 +64,5 @@
 There's an `AppNavigation` class in the base module navigating users to the different screens. This is solely using deep links for launching all `Activities`
 
 # Sample Demo
+
+<img src="screenshot/sample-demo.gif?raw=true" width="300" />
