@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_submit">Submit</string>
+    <string name="login">Login</string>
+    <string name="login_username">Username (e-mail address)</string>
+    <string name="login_password">Password</string>
+    <string name="login_validation_empty_field">This field must not be empty</string>
+    <string name="login_validation_invalid_email_address">This e-mail address is invalid</string>
+    <string name="login_success">Successfully logged in as %1$s</string>
+</resources>

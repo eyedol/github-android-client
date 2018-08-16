@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.addhen.github.users">
+    <application>
+        <activity android:name=".UsersActivity">
+            <intent-filter android:autoVerify="true">
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="s-urn"/>
+                <data android:host="github.addhen.com"/>
+                <data android:path="/users"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.addhen.github.users.UserItemViewModel"
+        />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:onClick="@{() -> viewModel.onUserClick()}"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/user_image"
+            android:layout_height="@dimen/user_image"
+            android:layout_marginBottom="@dimen/user_image_margin_bottom"
+            android:layout_marginLeft="@dimen/user_image_margin"
+            android:layout_marginRight="@dimen/user_image_margin"
+            android:layout_marginTop="@dimen/user_image_margin"
+            app:srcCompat="@drawable/ic_circular_avatar_mask"
+            app:userImageSize="@{@dimen/user_image}"
+            app:userImageUrl="@{viewModel.user.avatarUrl}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/user_item_margin_bottom"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@{viewModel.user.username}"
+            android:textColor="@color/black"
+            tools:text="Henry Addo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/user_image_margin_bottom"
+            app:layout_constraintTop_toBottomOf="@id/avatar"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

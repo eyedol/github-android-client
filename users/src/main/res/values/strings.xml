@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty_user_list">Empty user list</string>
+    <string name="app_log_content_description">Logo for the app</string>
+    <string name="user_list">Github Users</string>
+</resources>

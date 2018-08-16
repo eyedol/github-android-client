@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Theme & Accent -->
+    <color name="theme">@color/blue</color>
+    <color name="dark_theme">@color/dark_blue</color>
+    <color name="accent">@color/pink</color>
+    <!-- Toolbar-->
+    <color name="toolbar_background">@color/theme</color>
+    <color name="toolbar_text">@color/white</color>
+    <color name="toolbar_sub_text">@color/white</color>
+    <!-- Navigation -->
+    <color name="nav_background">@color/white</color>
+    <color name="nav_active">@color/theme</color>
+    <color name="nav_inactive">@color/grey400</color>
+    <!-- Progressbar -->
+    <integer-array name="progressBarColors">
+        <item>@color/theme</item>
+        <item>@color/accent</item>
+    </integer-array>
+    <!-- Empty view -->
+    <color name="empty_view_text">@color/black_alpha_9</color>
+
+</resources>

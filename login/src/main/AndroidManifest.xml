@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.addhen.github.login">
+    <application
+
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="s-urn"/>
+                <data android:host="@string/app_host"/>
+                <data android:path="/login"/>
+            </intent-filter>
+            <meta-data android:name="default-url"
+                       android:value="https://github.addhen.com/login"/>
+        </activity>
+    </application>
+</manifest>
